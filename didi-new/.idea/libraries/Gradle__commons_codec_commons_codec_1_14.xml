@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: commons-codec:commons-codec:1.14">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.14/commons-codec-1.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/caches/modules-2/files-2.1/commons-codec/commons-codec/1.14/674f0614376ac38259b01bcc67189ef240234569/commons-codec-1.14-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../caches/modules-2/files-2.1/commons-codec/commons-codec/1.14/674f0614376ac38259b01bcc67189ef240234569/commons-codec-1.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,75 @@
+plugins {
+    //id 'org.springframework.boot' version '2.5.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenLocal()
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile("junit:junit:4.12")
+    runtimeOnly 'mysql:mysql-connector-java'
+    compile("org.springframework.boot:spring-boot-starter-parent:${spring_boot_version}")
+    compile("org.springframework.boot:spring-boot-starter:${spring_boot_version}")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:${spring_boot_version}")
+    //netty
+    implementation group: 'io.netty', name: 'netty-all', version: '4.1.51.Final'
+    //json
+    /*implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.76'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'*/
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.76'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+    //mail
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '2.5.4'
+    //slf4j
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    //log
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+    implementation group: 'ch.qos.logback', name: 'logback-access', version: '1.2.3'
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.17.3'
+
+    //redis
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.3.1.RELEASE'
+
+    //lucene
+    implementation group: 'org.apache.lucene', name: 'lucene-core', version: '8.7.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.8.0'
+    implementation group: 'com.jianggujin', name: 'IKAnalyzer-lucene', version: '8.0.0'
+    implementation group: 'org.apache.lucene', name: 'lucene-queryparser', version: '8.10.1'
+    implementation group: 'org.apache.lucene', name: 'lucene-highlighter', version: '7.2.1'
+    implementation group: 'org.apache.lucene', name: 'lucene-suggest', version: '8.10.1'
+
+    //elasticsearch
+    implementation group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '7.8.0'
+
+    //lettuce
+    implementation group: 'io.lettuce', name: 'lettuce-core', version: '6.1.5.RELEASE'
+
+    //kafka
+    compile("org.springframework.kafka:spring-kafka:${spring_kafka_version}")
+    //BloomFilter
+    implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+    //pay
+    implementation group: 'com.alipay.sdk', name: 'alipay-sdk-java', version: '4.22.0.ALL'
+    implementation group: 'commons-logging', name: 'commons-logging', version: '1.2'
+
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.33'
+
+}
+
+test {
+    useJUnitPlatform()
+}
