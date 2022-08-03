@@ -4,6 +4,7 @@ package sun.com.didi.controller;
 import com.alipay.api.AlipayApiException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import sun.com.didi.entity.AlipayBean;
 import sun.com.didi.service.PayService;

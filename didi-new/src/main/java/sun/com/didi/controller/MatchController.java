@@ -48,7 +48,7 @@ public class MatchController {
 
     @RequestMapping(value = "/order", method = RequestMethod.GET)
     public String order(){
-        return "order";
+        return "feedback";
     }
 
     @RequestMapping(value = "/pay", method = RequestMethod.GET)
